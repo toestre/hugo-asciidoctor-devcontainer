@@ -1,8 +1,10 @@
-# Hugo + Asciidoctor development container for Visual Studio Code
+# Hugo & Asciidoctor development container for VS Code
 
 Clone this repository into your project if you want to use this devcontainer. Alternatively, donwload and copy the `.devcontainer` folder and all its files into your project folder.
 
-The devcontainer uses the Docker image `tisasiju/hugoadocdevcontainer`. This image is built on the image `<image>`. I've added further packages and tools:
+The devcontainer uses the Docker image [`tisasiju/hugoadocdevcontainer`](https://hub.docker.com/r/tisasiju/hugoadocdevcontainer). This image is built on the image [`klakegg/hugo`](https://hub.docker.com/r/klakegg/hugo). GitHub Repo to that image found [here](https://github.com/klakegg/docker-hugo).
+
+I've added further packages and tools on top of that image:
 
 - ruby gems `asciidoctor-pdf` and `asciidoctor-html5s`
 - packages `python3` and `py3-pip`
