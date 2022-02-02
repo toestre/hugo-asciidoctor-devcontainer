@@ -1,8 +1,10 @@
 # Hugo & Asciidoctor development container for VS Code
 
-Clone this repository into your project if you want to use this devcontainer. Alternatively, donwload and copy the `.devcontainer` folder and all its files into your project folder.
+This image runs [Hugo](https://gohugo.io/) in a docker container. As also [Asciidoctor](https://asciidoctor.org/) is installed you can use this markup language instead of Markdown to create awesome websites.
 
-The devcontainer uses the Docker image [`tisasiju/hugoadocdevcontainer`](https://hub.docker.com/r/tisasiju/hugoadocdevcontainer). This image is built on the image [`klakegg/hugo`](https://hub.docker.com/r/klakegg/hugo). GitHub Repo to that image found [here](https://github.com/klakegg/docker-hugo).
+Clone this repository into your project if you want to use this devcontainer. Alternatively, download and copy the `.devcontainer` folder and all its files into your project folder.
+
+The devcontainer uses the Docker image [`tisasiju/hugoadocdevcontainer`](https://hub.docker.com/r/tisasiju/hugoadocdevcontainer). This image is built on the image [`klakegg/hugo:0.92.1-ext-asciidoctor`](https://hub.docker.com/r/klakegg/hugo). GitHub Repo to that image found [here](https://github.com/klakegg/docker-hugo). The image from which I started offers the _extended Hugo edition_ which offers some additional features.
 
 I've added further packages and tools on top of that image:
 
@@ -36,3 +38,4 @@ The vs-code plugins which are used in the devcontainer:
     - create a set of replacement rules
     - a couple of rules are defined in the config section
 - `vscode-icons-team.vscode-icons`
+
