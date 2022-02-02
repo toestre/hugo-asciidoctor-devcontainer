@@ -1,0 +1,49 @@
+{
+    "name": "hugo-adoc-dev",
+    "dockerComposeFile": ["docker-compose.yml"],
+    "service": "vscode",
+    "runServices": ["vscode"],
+    "shutdownAction": "stopCompose",
+    "workspaceFolder": "/workspace",
+    "postCreateCommand": "",
+    "extensions": [
+        // Hugo & Asciidoc
+        "rusnasonov.vscode-hugo",
+        "budparr.language-hugo-vscode",
+        "asciidoctor.asciidoctor-vscode",
+        // Git
+        "eamodio.gitlens",
+        // Other helpers
+        "shardulm94.trailing-spaces",
+        "stkb.rewrap", // rewrap comments after n characters on one line
+        // Other
+        "vscode-icons-team.vscode-icons",
+        "bhughes339.replacerules",
+    ],
+    "settings": {
+        // General settings
+        "files.eol": "\n",
+        "editor.wordWrap": "on",
+        "replacerules.rules": {
+            "Remove blank lines": {
+                "find": "^\\n",
+                "replace": ""
+            },
+            "Remove duplicate lines": {
+                "find": "^(.*)(\\r?\\n\\1)+$", // two consecutive identical lines
+                "replace": "$1"                // replace with one of the lines
+            },
+            "Remove quotation marks": {
+                "find": "(“|”)",
+                "replace": "\""
+            },
+        },
+        "replacerules.rulesets": {
+            
+        },
+        "[markdown]": {
+            "editor.quickSuggestions": true
+        },
+        "asciidoc.use_asciidoctorpdf": true,
+    }
+}
